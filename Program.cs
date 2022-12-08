@@ -39,8 +39,7 @@ while (true)
             var ccolor = (Enum.Parse(typeof(carcolor), cc));
          //= Console.ReadLine();
             car thirdcar = new car((carbrand)carmodel, (carcolor)ccolor, converted);
-
-            List<car> car = shop.showcars();
+            List<car> car;
             car.Add(thirdcar);
             shop.showcars();
             break;
@@ -55,7 +54,7 @@ while (true)
 Console.ReadKey();
 
 //Class definition
-
+/*
 int GetIntInput(string errorMessage)
 {
     while (true)
@@ -89,3 +88,4 @@ string GetStringInput(string errorMessage)
         }
     }
 }
+*/
