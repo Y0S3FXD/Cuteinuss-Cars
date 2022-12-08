@@ -30,7 +30,7 @@ void cardealer(string input){
         
             Console.WriteLine("We currently are only buying BMW, AUDI, MERCEDESM, FORD, FERRARI");
             string cm = Console.ReadLine();
-            var carmodel = (Enum.Parse(typeof(carbrand), cm));
+            carbrand carmodel = (Enum.Parse<carbrand>(cm));
             Console.WriteLine("What is the price");
             string carprice = Console.ReadLine();
             converted = Int32.Parse(carprice);
@@ -38,7 +38,7 @@ void cardealer(string input){
             //int colorcar = GetIntInput("No, it needs to an integer");
             //Console.WriteLine("You chose color ; " + (carcolor)colorcar);
             string cc = Console.ReadLine();
-            var ccolor = (Enum.Parse(typeof(carcolor), cc));
+            carcolor ccolor = (Enum.Parse<carcolor>(cc));
          //= Console.ReadLine();
             car new_car = new car((carbrand)carmodel, (carcolor)ccolor, converted);
             car carpaymentsuccesful = shop.insert(new_car);
@@ -57,18 +57,22 @@ void cardealer(string input){
             return;
     }
 }
-Console.WriteLine("WE are here1111 press enter");
-Console.ReadKey();
-
-while (true)
+bool process = true;
+while (process)
 {
     Console.WriteLine("Write an action [buy, sell, exit]");
 cardealer(Console.ReadLine());
+Console.WriteLine("Anything else yes/no");
+string answer = Console.ReadLine();
+if (answer == "no")
+{
+    process = false;
+}
 
 }
 
-Console.ReadKey();
-
+Console.WriteLine("Good bye deer friend, and take care driving");
+Thread.Sleep(3200);
 //Class definition
 
 int GetIntInput(string errorMessage)

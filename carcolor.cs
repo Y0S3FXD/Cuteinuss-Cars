@@ -1,3 +1,3 @@
 public enum carcolor{
-    yellow = 0, blue = 1, red, black
+    yellow, blue, red, black
 }
