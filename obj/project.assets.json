@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Y0S3FXD\\Documents\\GitHub\\Programmering\\Cuteinuss-Cars\\Cuteinuss-Cars.csproj",
-      "projectName": "Cuteinuss-Cars",
-      "projectPath": "C:\\Users\\Y0S3FXD\\Documents\\GitHub\\Programmering\\Cuteinuss-Cars\\Cuteinuss-Cars.csproj",
+      "projectUniqueName": "C:\\Users\\Y0S3FXD\\Documents\\GitHub\\Programmering\\Cuteinuss_Cars\\Cuteinuss_Cars.csproj",
+      "projectName": "Cuteinuss_Cars",
+      "projectPath": "C:\\Users\\Y0S3FXD\\Documents\\GitHub\\Programmering\\Cuteinuss_Cars\\Cuteinuss_Cars.csproj",
       "packagesPath": "C:\\Users\\Y0S3FXD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Y0S3FXD\\Documents\\GitHub\\Programmering\\Cuteinuss-Cars\\obj\\",
+      "outputPath": "C:\\Users\\Y0S3FXD\\Documents\\GitHub\\Programmering\\Cuteinuss_Cars\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Y0S3FXD\\AppData\\Roaming\\NuGet\\NuGet.Config"

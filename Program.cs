@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Runtime.CompilerServices;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 /*
 * Todays work will be refactoring the Car, Door and Tire class into seperate files
@@ -10,22 +11,23 @@ using System.Runtime.InteropServices;
 
 Console.WriteLine("Hello Customer");
 carshop shop = new carshop();
-
-Console.WriteLine("Write an action [buy, sell, exit]");
-string input = Console.ReadLine();
-while (true)
-{
+void cardealer(string input){
     switch (input)
     {
         case "buy":
             List<car> cars = shop.showcars();
-            Console.WriteLine("which one you want, write integer.");
+            Console.WriteLine("\nwhich one you want, write integer.");
             string answer = Console.ReadLine();
             int converted = Int32.Parse(answer);
             car newcar = shop.Buy(cars[converted]);
-            Console.WriteLine(newcar.brand + "  and  ", newcar.color);
+            Console.WriteLine("\nCongratz on your new car its an "+newcar.brand +"  its very shiny  " + newcar.color + " this is sepcial edition color\n");
             break;
         case "sell":
+        bool selling = true;
+        while (selling)
+        {
+            
+        
             Console.WriteLine("We currently are only buying BMW, AUDI, MERCEDESM, FORD, FERRARI");
             string cm = Console.ReadLine();
             var carmodel = (Enum.Parse(typeof(carbrand), cm));
@@ -38,10 +40,16 @@ while (true)
             string cc = Console.ReadLine();
             var ccolor = (Enum.Parse(typeof(carcolor), cc));
          //= Console.ReadLine();
-            car thirdcar = new car((carbrand)carmodel, (carcolor)ccolor, converted);
-            List<car> car;
-            car.Add(thirdcar);
-            shop.showcars();
+            car new_car = new car((carbrand)carmodel, (carcolor)ccolor, converted);
+            car carpaymentsuccesful = shop.insert(new_car);
+            List<car>cars1 = shop.showcars();
+            Console.WriteLine("Want to sell another car yes/no");
+            string ansswer = Console.ReadLine();
+            if (ansswer == "no")
+            {
+                selling = false;
+            }
+        }
             break;
         case "exit":
             return;
@@ -49,12 +57,20 @@ while (true)
             return;
     }
 }
+Console.WriteLine("WE are here1111 press enter");
+Console.ReadKey();
 
+while (true)
+{
+    Console.WriteLine("Write an action [buy, sell, exit]");
+cardealer(Console.ReadLine());
+
+}
 
 Console.ReadKey();
 
 //Class definition
-/*
+
 int GetIntInput(string errorMessage)
 {
     while (true)
@@ -88,4 +104,3 @@ string GetStringInput(string errorMessage)
         }
     }
 }
-*/

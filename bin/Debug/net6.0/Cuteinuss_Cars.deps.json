@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Cuteinuss-Cars/1.0.0": {
+      "Cuteinuss_Cars/1.0.0": {
         "runtime": {
-          "Cuteinuss-Cars.dll": {}
+          "Cuteinuss_Cars.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Cuteinuss-Cars/1.0.0": {
+    "Cuteinuss_Cars/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
