@@ -11,45 +11,57 @@ using System.Runtime.InteropServices;
 
 Console.WriteLine("Hello Customer");
 carshop shop = new carshop();
-void cardealer(string input){
+
+
+void _buyingproces()
+{
+    List<car> cars = shop.showcars();
+    Console.WriteLine("\nwhich one you want, write integer.");
+    string answer = Console.ReadLine();
+    int converted = Int32.Parse(answer);
+    car newcar = shop.Buy(cars[converted]);
+    Console.WriteLine("\nCongratz on your new car its an " + newcar.brand + "  its very shiny  " + newcar.color + " this is sepcial edition color\n");
+}
+
+void _sellingproces()
+{
+    bool selling = true;
+    while (selling)
+    {
+
+        Console.WriteLine("We currently are only buying BMW, AUDI, MERCEDESM, FORD, FERRARI");
+        string cm = Console.ReadLine();
+        carbrand carmodel = (Enum.Parse<carbrand>(cm));
+        Console.WriteLine("What is the price");
+        string carprice = Console.ReadLine();
+        int converted = Int32.Parse(carprice);
+        Console.WriteLine("what color is it");
+        //int colorcar = GetIntInput("No, it needs to an integer");
+        //Console.WriteLine("You chose color ; " + (carcolor)colorcar);
+        string cc = Console.ReadLine();
+        carcolor ccolor = (Enum.Parse<carcolor>(cc));
+        //= Console.ReadLine();
+        car new_car = new car((carbrand)carmodel, (carcolor)ccolor, converted);
+        car carpaymentsuccesful = shop.insert(new_car);
+        List<car> cars1 = shop.showcars();
+        Console.WriteLine("Want to sell another car yes/no");
+        string ansswer = Console.ReadLine();
+        if (ansswer == "no")
+        {
+            selling = false;
+        }
+    }
+}
+void cardealer(string input)
+{
     switch (input)
     {
         case "buy":
-            List<car> cars = shop.showcars();
-            Console.WriteLine("\nwhich one you want, write integer.");
-            string answer = Console.ReadLine();
-            int converted = Int32.Parse(answer);
-            car newcar = shop.Buy(cars[converted]);
-            Console.WriteLine("\nCongratz on your new car its an "+newcar.brand +"  its very shiny  " + newcar.color + " this is sepcial edition color\n");
+            _buyingproces();
             break;
+
         case "sell":
-        bool selling = true;
-        while (selling)
-        {
-            
-        
-            Console.WriteLine("We currently are only buying BMW, AUDI, MERCEDESM, FORD, FERRARI");
-            string cm = Console.ReadLine();
-            carbrand carmodel = (Enum.Parse<carbrand>(cm));
-            Console.WriteLine("What is the price");
-            string carprice = Console.ReadLine();
-            converted = Int32.Parse(carprice);
-            Console.WriteLine("what color is it");
-            //int colorcar = GetIntInput("No, it needs to an integer");
-            //Console.WriteLine("You chose color ; " + (carcolor)colorcar);
-            string cc = Console.ReadLine();
-            carcolor ccolor = (Enum.Parse<carcolor>(cc));
-         //= Console.ReadLine();
-            car new_car = new car((carbrand)carmodel, (carcolor)ccolor, converted);
-            car carpaymentsuccesful = shop.insert(new_car);
-            List<car>cars1 = shop.showcars();
-            Console.WriteLine("Want to sell another car yes/no");
-            string ansswer = Console.ReadLine();
-            if (ansswer == "no")
-            {
-                selling = false;
-            }
-        }
+            _sellingproces();
             break;
         case "exit":
             return;
@@ -61,13 +73,13 @@ bool process = true;
 while (process)
 {
     Console.WriteLine("Write an action [buy, sell, exit]");
-cardealer(Console.ReadLine());
-Console.WriteLine("Anything else yes/no");
-string answer = Console.ReadLine();
-if (answer == "no")
-{
-    process = false;
-}
+    cardealer(Console.ReadLine());
+    Console.WriteLine("Anything else yes/no");
+    string answer = Console.ReadLine();
+    if (answer == "no")
+    {
+        process = false;
+    }
 
 }
 
