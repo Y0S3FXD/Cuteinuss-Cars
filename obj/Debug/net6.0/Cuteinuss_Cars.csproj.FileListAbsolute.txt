@@ -1,0 +1,15 @@
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\Cuteinuss_Cars.csproj.AssemblyReference.cache
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\Cuteinuss_Cars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\Cuteinuss_Cars.AssemblyInfoInputs.cache
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\Cuteinuss_Cars.AssemblyInfo.cs
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\Cuteinuss_Cars.csproj.CoreCompileInputs.cache
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\bin\Debug\net6.0\Cuteinuss_Cars.exe
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\bin\Debug\net6.0\Cuteinuss_Cars.deps.json
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\bin\Debug\net6.0\Cuteinuss_Cars.runtimeconfig.json
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\bin\Debug\net6.0\Cuteinuss_Cars.dll
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\bin\Debug\net6.0\Cuteinuss_Cars.pdb
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\Cuteinuss_Cars.dll
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\refint\Cuteinuss_Cars.dll
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\Cuteinuss_Cars.pdb
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\Cuteinuss_Cars.genruntimeconfig.cache
+C:\Users\Y0S3FXD\Documents\GitHub\Programmering\Cuteinuss_Cars\obj\Debug\net6.0\ref\Cuteinuss_Cars.dll
