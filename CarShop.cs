@@ -1,3 +1,4 @@
+// A list of avaiable cars is created, and there is added code so that the list can be expanded or shortened, while there is a desctiption of each car:
 public class CarShop
 {
 
@@ -19,6 +20,7 @@ public class CarShop
         ourcars.Add(CAR);
         return CAR;
     }
+
     public List<Car> showcars()
     {
 
