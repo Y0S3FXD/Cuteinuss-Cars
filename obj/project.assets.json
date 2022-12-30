@@ -8,24 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Y0S3FXD\\.nuget\\packages\\": {}
+    "C:\\Users\\Stinu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Y0S3FXD\\Documents\\GitHub\\Programmering\\Cuteinuss_Cars\\Cuteinuss_Cars.csproj",
+      "projectUniqueName": "C:\\Users\\Stinu\\OneDrive\\Skrivebord\\Cuteinuss_Cars\\Cuteinuss_Cars.csproj",
       "projectName": "Cuteinuss_Cars",
-      "projectPath": "C:\\Users\\Y0S3FXD\\Documents\\GitHub\\Programmering\\Cuteinuss_Cars\\Cuteinuss_Cars.csproj",
-      "packagesPath": "C:\\Users\\Y0S3FXD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Y0S3FXD\\Documents\\GitHub\\Programmering\\Cuteinuss_Cars\\obj\\",
+      "projectPath": "C:\\Users\\Stinu\\OneDrive\\Skrivebord\\Cuteinuss_Cars\\Cuteinuss_Cars.csproj",
+      "packagesPath": "C:\\Users\\Stinu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Stinu\\OneDrive\\Skrivebord\\Cuteinuss_Cars\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Y0S3FXD\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Stinu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

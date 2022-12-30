@@ -1,3 +1,4 @@
-public enum carcolor{
+public enum CarColor
+{
     yellow, blue, red, black
 }

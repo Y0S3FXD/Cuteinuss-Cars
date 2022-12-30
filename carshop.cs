@@ -1,30 +1,35 @@
-public class carshop
+public class CarShop
 {
 
-public List<car> ourcars = new List<car>();
+    public List<Car> ourcars = new List<Car>();
 
-public carshop(){
-
-    ourcars.Add(new car(carbrand.AUDI, carcolor.blue, 870));
-    
-    ourcars.Add(new car(carbrand.BMW, carcolor.yellow, 420));
-    
-}
-
-public car Buy(car CAR){
-    ourcars.Remove(CAR);
-    return CAR;
-}
-public car insert(car CAR){
-    ourcars.Add(CAR);
-    return CAR;
-}
-public List<car> showcars(){
-
-    foreach (car CAR in ourcars)
+    public CarShop()
     {
-        Console.WriteLine(ourcars.IndexOf(CAR) + ". this car is   " + CAR.color + "  colored, and model name is  " + CAR.brand + "  and the car costs that much:  " +CAR.price);
+        ourcars.Add(new Car(CarBrand.AUDI, CarColor.blue, 870, TyreBrand.Michelin));
+        ourcars.Add(new Car(CarBrand.BMW, CarColor.yellow, 420, TyreBrand.Continental));
     }
-    return ourcars;
-}
+
+    public Car Buy(Car CAR)
+    {
+        ourcars.Remove(CAR);
+        return CAR;
+    }
+    public Car Insert(Car CAR)
+    {
+        ourcars.Add(CAR);
+        return CAR;
+    }
+    public List<Car> showcars()
+    {
+
+        foreach (Car CAR in ourcars)
+        {
+            Console.WriteLine(ourcars.IndexOf(CAR)
+            + ". this car is " + CAR.color
+            + "  colored, and model name is " + CAR.brand
+            + "  and the car costs " + CAR.price
+            + "  with tyres " + CAR.tyre);
+        }
+        return ourcars;
+    }
 }
