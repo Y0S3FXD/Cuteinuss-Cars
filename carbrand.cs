@@ -1,3 +1,4 @@
-public enum carbrand{
-    BMW, AUDI, MERCEDESM, FORD, FERRARI
+public enum CarBrand
+{
+    BMW, AUDI, Mercedes, Ford, Ferrari
 }
